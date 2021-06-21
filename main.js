@@ -1,0 +1,1 @@
+(()=>{var e=document.createElement("h2");e.innerText="Yas, this work!",document.body.appendChild(e)})();
