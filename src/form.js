@@ -2,8 +2,19 @@ import 'regenerator-runtime/runtime';
 import dataContainer from './info-show';
 import getWeather from './require-weather';
 
+const firstDataRequested = () => {
+  let divCreated = false;
+  return {
+    changeStatus: () => {
+      divCreated = true;
+    },
+    getStatus: () => divCreated,
+  };
+};
+
 const form = () => {
   const { body } = document;
+  const isTheSecond = firstDataRequested();
   const cityForm = document.createElement('form');
   cityForm.classList.add('form');
   cityForm.method = 'get';
@@ -30,13 +41,14 @@ const form = () => {
       msj.classList.remove('d-none');
       msj.classList.add('d-flex');
     } else if (result.message) {
-      msj.innerText = result.message[0].toUpperCase() + result.message.substring(1).toLowerCase();
+      msj.innerText = result.message[0].toUpperCase()
+        + result.message.substring(1).toLowerCase();
       msj.classList.remove('d-none');
       msj.classList.add('d-flex');
     } else {
       msj.classList.remove('d-flex');
       msj.classList.add('d-none');
-      if (body.childNodes[9] !== undefined) {
+      if (isTheSecond.getStatus() === true) {
         body.replaceChild(
           dataContainer(
             inputForm.value,
@@ -46,9 +58,10 @@ const form = () => {
             result.tempMax,
             result.statusDesc,
           ),
-          body.childNodes[9],
+          body.lastChild,
         );
       } else {
+        isTheSecond.changeStatus();
         body.appendChild(
           dataContainer(
             inputForm.value,
