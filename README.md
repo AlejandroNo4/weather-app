@@ -8,35 +8,35 @@
   <img src="app_screenshot.png" width="800">
 </p>
 
-The user can request the weather information form a specific city.
+The user can request weather information from a specific city.
 
-Each request will show the min, max and actual temperature. Also the description and icon for the weather, and the name of the requested city.
+Each request will show the temperature and its variants.  The data also includes the description and icon for the weather and the name of the requested city.
 
-It is possible to change the units of the temperatures from celcius to farenheight.
+It is possible to change the units of the temperatures from Celsius to Fahrenheit.
 
-If the user try serch for the empty input or a wrong city, the body will display an error message.
+If the user tries to search for the empty input or the wrong city, the body will display an error message.
 
-The project was made with learning propusses, to practice asynchronous Javascript. There are multiple ways to achive this. In this project, I used a combination of async/await with a try/catch block.
+The project was made with learning proposes. To practice asynchronous Javascript and work with APIs. There are multiple ways to achieve this. In this project, I used a combination of async/await with a try/catch block.
 
 ## Live Demo
 
-[Live Demo Link](https://alejandrono4.github.io/todo-list/)
+[Live Demo Link](https://github.com/AlejandroNo4/weather-app/settings/pages)
 
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running, follow these simple example steps.
 
 - At first, you have to clone this repository. Open your terminal and paste this without the $ sign.
 
-      $ git clone https://github.com/AlejandroNo4/todo-list.git
+      $ git clone https://github.com/AlejandroNo4/weather-app.git
 
-- Now that you have the repository in your local machine. Change the direction of the local file with your terminal. Just type "$ cd" (without the $ sign) and the path to reach the todo-list folder.<br/>
+- Now that you have the repository in your local machine. Change the direction of the local file with your terminal. Just type "$ cd" (without the $ sign) and the path to reach the weather-app folder.<br/>
   Something like:
 
-        $ cd User/Documents/todo-list
+        $ cd User/Documents/weather-app
 
-- Now to install Webpack, run in your terminal:
+- Now, to install Webpack, run in your terminal:
 
         $ npm install webpack webpack-cli --save-dev
 
@@ -72,7 +72,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [Issues page](https://github.com/AlejandroNo4/todo-list/issues).
+Feel free to check the [Issues page](https://github.com/AlejandroNo4/weather-app/issues).
 
 ## Show your support
 
@@ -80,8 +80,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Based on the requirements from [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/todo-list)
-- Fonts from [google fonts](https://fonts.google.com/)
+- Based on the requirements from [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/weather-app)
+- Icons from [Icons8](https://icons8.com/)
 
 ## 📝 License
 
