@@ -20,7 +20,7 @@ The project was made with learning proposes. To practice asynchronous Javascript
 
 ## Live Demo
 
-[Live Demo Link](https://github.com/AlejandroNo4/weather-app/settings/pages)
+[Live Demo Link](https://alejandrono4.github.io/weather-app/)
 
 
 ## Getting Started
