@@ -7,7 +7,7 @@ async function getWeather(city) {
     const res = await fetch(api, { mode: "cors" });
     const json = await res.json();
     if (json.cod === "404") {
-      return json;
+      return json
     } else {
       const weather = {
         statusDesc: json.weather[0].description,
@@ -21,8 +21,7 @@ async function getWeather(city) {
       return weather;
     }
   } catch (err) {
-    alert(err);
-    console.log(err);
+    return err
   }
 }
 

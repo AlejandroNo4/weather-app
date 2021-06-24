@@ -27,15 +27,17 @@ const form = () => {
   buttonSend.addEventListener("click", async function (event) {
     event.preventDefault();
     const result = await getWeather(inputForm.value);
-    if (result.message) {
-      msj.innerText = result.message;
+    if (inputForm.value === ""){
+      msj.innerText = "Please, add a city";
+      msj.classList.remove("d-none");
+      msj.classList.add("d-flex");
+    } else if (result.message) {
+      msj.innerText = result.message[0].toUpperCase() + result.message.substring(1).toLowerCase();
       msj.classList.remove("d-none");
       msj.classList.add("d-flex");
     } else {
       msj.classList.remove("d-flex");
       msj.classList.add("d-none");
-      console.log(result.status);
-      console.log(body.childNodes);
       if (body.childNodes[9] != undefined) {
         body.replaceChild(
           dataContainer(
