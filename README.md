@@ -36,6 +36,14 @@ To get a local copy up and running, follow these simple example steps.
 
         $ cd User/Documents/weather-app
 
+**Important, this project requires an API key from OpenWeather. To obtain one, click [here](https://home.openweathermap.org/) and create an account. Then, click on your username / My API keys**
+
+- Now that you have your API key, open the file key.js that is on the src folder.
+
+- copy your key and paste it between the quotation marks. Something like this:
+
+        const key = '[YOUR API KEY HERE]';
+
 - Now, to install Webpack, run in your terminal:
 
         $ npm install webpack webpack-cli --save-dev
@@ -51,6 +59,7 @@ To get a local copy up and running, follow these simple example steps.
 - Now back on Vs Code, open the "dist" folder. Then right-click on the index.html file and click on open with Live Server.
 
 <br/>
+
 
 ## Built With
 
