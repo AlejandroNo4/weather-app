@@ -1,8 +1,3 @@
-import "regenerator-runtime/runtime";
-import { key } from "./key";
-import { getWeather } from "./require-weather";
-import { form } from "./form";
-
 function tempValue(temp, min, max) {
   this.tempC = temp + "°C";
   this.minC = "Min: " + min + "°C";
@@ -103,4 +98,4 @@ const dataContainer = (cityName, temp, icon, min, max, description) => {
   return mainContainer;
 };
 
-export {dataContainer}
+export { dataContainer };

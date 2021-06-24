@@ -1,7 +1,5 @@
 import "regenerator-runtime/runtime";
-import { dataContainer } from "./info-show";
 import { key } from "./key";
-import { form } from "./form";
 
 async function getWeather(city) {
   let api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${key}`;

@@ -1,10 +1,9 @@
 import "regenerator-runtime/runtime";
 import { dataContainer } from "./info-show";
-import { key } from "./key";
 import { getWeather } from "./require-weather";
 
 const form = () => {
-  const body = document.body
+  const body = document.body;
   const cityForm = document.createElement("form");
   cityForm.classList.add("form");
   cityForm.method = "get";
